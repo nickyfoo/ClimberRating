@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Information">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+
+
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Developed lovingly in the Summer of 2020 during the SG Circuit Breaker by Foo Chuan Le, Nicholas @wonderfoo97
+        \n\nThis app aims to model your climbing proficiency through an implementation of the ELO rating. A rating of 4 means that the probability that you flash a problem of grade 4 is 0.50.
+        \n\nMain screen:
+        \nType in a gym name and add gym, your rating is initialised to 0
+        \nLong hold on a gym entry to delete\nTap a gym entry to go to your rating there
+        \n\nGym rating:
+        \nProblem grade: an integer based on the gym's grading, lowest is 0, next lowest is 1 etc.
+        \nAttempts: number of attempts to send the problem, 0 for unsent
+        \nRepeats: number of times you've repeated the problem (more means its actual grade is lower because you're familiar
+        \nNew grade: computes your new rating at this gym
+        \nUndo: rolls back your rating to the previous one (in case of erroneous insertions)
+        \nSet new climber grade: if you want to transfer data from another device, or want to calibrate yourself higher than 0
+        \nSet: sets your rating to the entry above, undo is possible\n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
